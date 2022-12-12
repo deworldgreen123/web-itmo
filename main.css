@@ -1,0 +1,44 @@
+main{
+    flex-grow: 1;
+}
+
+.main_theme{
+    background-color: white;
+    margin: 20px auto;
+    width:1040px;
+    padding: 30px;
+    filter: drop-shadow(0 0 5px white);
+    display: flex;
+    flex-direction: column;
+}
+
+.main_theme p{
+}
+
+.main__text1{
+    font-size: 15pt;
+    font-family: "Century Gothic", cursive;
+    line-height: 16px;
+}
+
+.main__text2{
+    font-weight: bold;
+    text-align: justify;
+    white-space: pre;
+    text-decoration: overline;
+}
+
+.main__text3{
+    font-size: 15pt;
+    font-family: "Century Gothic", cursive;
+    background-color: aqua;
+    color: #e48f13;
+}
+
+.main__text4{
+    flex-grow: 1;
+    font-size: 15pt;
+    height: 100%;
+    font-family: "Century Gothic", cursive;
+    margin-top: 2.5cm;
+}
