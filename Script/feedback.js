@@ -9,8 +9,10 @@ function createListElement() {
     let task = document.getElementById('task').value;
     let task_item = `${task}`;
     if (task !== "") {
+        let url = new URL(document.location.href)
+        let v = url.searchParams.get("numBook")
         itemsArray.push(task_item);
-        localStorage.setItem('items', JSON.stringify(itemsArray));
+        localStorage.setItem('items'+v, JSON.stringify(itemsArray));
         addListElement(task_item);
     }
     else {
@@ -19,10 +21,12 @@ function createListElement() {
 }
 
 document.addEventListener("submit", createListElement);
+let url = new URL(document.location.href)
+let v = url.searchParams.get("numBook")
 
-let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-localStorage.setItem('items', JSON.stringify(itemsArray));
-const data = JSON.parse(localStorage.getItem('items'));
+let itemsArray = localStorage.getItem('items' + v) ? JSON.parse(localStorage.getItem('items' + v)) : [];
+localStorage.setItem('items' + v, JSON.stringify(itemsArray));
+const data = JSON.parse(localStorage.getItem('items' + v));
 document.ready = function()  {
     data.forEach(item => {
         addListElement(item);
@@ -30,10 +34,5 @@ document.ready = function()  {
 };
 
 $(function() {
-    var list = document.querySelector("#result_todo_list");
-    list.addEventListener('click', function(ev) {
-        if (ev.target.tagName === 'LI') {
-            ev.target.classList.toggle('checked');
-        }
-    }, false);
+    document.querySelector("#result_todo_list").addEventListener('click', function(ev) {}, false);
 });
