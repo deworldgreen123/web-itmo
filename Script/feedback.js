@@ -9,8 +9,6 @@ function createListElement() {
     let task = document.getElementById('task').value;
     let task_item = `${task}`;
     if (task !== "") {
-        let url = new URL(document.location.href)
-        let v = url.searchParams.get("numBook")
         itemsArray.push(task_item);
         localStorage.setItem('items'+v, JSON.stringify(itemsArray));
         addListElement(task_item);

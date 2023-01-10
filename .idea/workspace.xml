@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f03d8e-1d97-4fe0-a67b-f9f564ea9dac" name="Changes" comment="fix: style lab-7">
-      <change afterPath="$PROJECT_DIR$/feedbacksBook.html" afterDir="false" />
+    <list default="true" id="c9f03d8e-1d97-4fe0-a67b-f9f564ea9dac" name="Changes" comment="feat: add feedbackBook&#10;fix: lab-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Script/feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/feedback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/feedbacks.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/feedbacks.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedbacks.html" beforeDir="false" afterPath="$PROJECT_DIR$/feedbacks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <workItem from="1669632455191" duration="5414000" />
       <workItem from="1670773219843" duration="17891000" />
       <workItem from="1671998173634" duration="3332000" />
-      <workItem from="1673093595118" duration="92557000" />
+      <workItem from="1673093595118" duration="95959000" />
     </task>
     <task id="LOCAL-00001" summary="ff">
       <created>1670849770938</created>
@@ -130,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673365164440</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add feedbackBook&#10;fix: lab-5">
+      <created>1673375043343</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673375043343</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +153,31 @@
     <MESSAGE value="ff" />
     <MESSAGE value="add lab 3, 4, 5, 7" />
     <MESSAGE value="fix: style lab-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: style lab-7" />
+    <MESSAGE value="feat: add feedbackBook&#10;fix: lab-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add feedbackBook&#10;fix: lab-5" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Script/feedback.js</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Script/feedback.js</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Script/feedback.js</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
