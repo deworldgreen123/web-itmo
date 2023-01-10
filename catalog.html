@@ -3,22 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="Styles/style.css" rel="stylesheet">
+    <link href="Styles/header.css" rel="stylesheet">
+    <link href="Styles/main.css" rel="stylesheet">
+    <link href="Styles/table.css" rel="stylesheet">
+    <script src="Script/timeLoad.js"></script>
+    <script src="Script/activeMenu.js"></script>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html"><img src="img/icon.jpg" alt="" class="header-nav-a-left" style="border-radius: 30px;"></a>
-        <a href="catalog.html" class="header-nav-button"><p>Каталог</p></a>
-        <a href="search.html" class="header-nav-button"><p><img src="img/лупа.png" style="height: 20px" alt="">   Поиск</p></a>
-        <a href="signIn.html" class="header-nav-signIn"><p>Вход</p></a>
-    </nav>
+<header class="header_main-theme">
+    <div class="header__menu header__menu_main-theme">
+        <div class="header__icon header__icon_main-theme">
+            <a href="index.html"><img src="img/icon.jpg" alt="" style="border-radius: 50px; height: 50px;"></a>
+        </div>
+        <div class="header__menu-mid header__menu-mid_main-theme">
+            <div id="catalog" class="header__mid-menu_units header__catalog_main-theme header__button_theme">
+                <a href="catalog.html">
+                    <p>Каталог</p>
+                </a>
+            </div>
+            <div id="search" class="header__mid-menu_units header__search_main-theme header__button_theme">
+                <a href="search.html">
+                    <p><img src="img/лупа.png" alt="">  Поиск</p>
+                </a>
+            </div>
+            <div id="feedbacks" class="header__mid-menu_units header__feedbacks header__button_theme">
+                <a href="feedbacks.html">
+                    <p>Отзывы</p>
+                </a>
+            </div>
+        </div>
+        <div class="header__sing header__sing_main-theme">
+            <div id="signIn" class="header__sign-in header__sign-in_main-theme header__button_theme">
+                <a href="signIn.html"><p>Вход</p></a>
+            </div>
+            <div id="signUp" class="header__sign-up header__sign-up_main-theme header__button_theme">
+                <a href="signUp.html"><p>Регистрация</p></a>
+            </div>
+        </div>
+    </div>
 </header>
-<main>
-
+<main class="main_theme">
+    <div class="table">
+        <table class="grid_table">
+            <tbody>
+                <tr class="row_table">
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book1.jpg" alt=""></a>
+                        <p>Гарри Поттер и Филосовский камень</p>
+                    </th>
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book2.jpg" alt=""></a>
+                        <p>Гарри Поттер и Тайная комната</p>
+                    </th>
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book3.jpg" alt=""></a>
+                        <p>Гарри Поттер и узник Азкабана</p>
+                    </th>
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book4.jpg" alt=""></a>
+                        <p>Гарри Поттер и Кубок огня</p>
+                    </th>
+                </tr>
+                <tr class="row_table">
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book5.jpg" alt=""></a>
+                        <p>Гарри Поттер и Орден Феникса</p>
+                    </th>
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book6.jpg" alt=""></a>
+                        <p>Гарри Поттер и Принц-полукровка</p>
+                    </th>
+                    <th class="field_in_table">
+                        <a href=""><img src="img/book7.jpg" alt=""></a>
+                        <p>Гарри Поттер и Дары Смерти</p>
+                    </th>
+                    <th class="field_in_table">
+                        <a href=""><img src="img/neNado.png" alt=""></a>
+                        <p>Гарри Поттер без "Гарри Поттера"</p>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </main>
 <footer>
-
+    <ul>
+        <li>Контакстная информация:</li>
+        <li><a href="https://t.me/deworld" target="_blank">Телеграмм</a></li>
+        <li><a href="https://vk.com/id220020451" target="_blank">Вконтакте</a></li>
+        <li><a href="mailto:deworldgreen123@gmail.com" target="_blank">deworldgreen123@gmail.com</a></li>
+    </ul>
 </footer>
+<span id="load-time"></span>
 </body>
 </html>

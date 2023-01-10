@@ -5,7 +5,6 @@ main{
 .main_theme{
     background-color: white;
     margin: 20px auto;
-    width:1040px;
     padding: 30px;
     filter: drop-shadow(0 0 5px white);
     display: flex;
@@ -13,6 +12,7 @@ main{
 }
 
 .main_theme p{
+    font-family: "Times New Roman", serif;
 }
 
 .main__text1{
@@ -24,13 +24,14 @@ main{
 .main__text2{
     font-weight: bold;
     text-align: justify;
-    white-space: pre;
+
     text-decoration: overline;
 }
 
 .main__text3{
+    text-indent: 10pt;
     font-size: 15pt;
-    font-family: "Century Gothic", cursive;
+    font-style: italic;
     background-color: aqua;
     color: #e48f13;
 }
@@ -41,4 +42,34 @@ main{
     height: 100%;
     font-family: "Century Gothic", cursive;
     margin-top: 2.5cm;
+    text-transform: uppercase;
+}
+
+.main_theme pre{
+    font-family: "Arial Narrow", serif;
+}
+
+@media screen and (max-width: 1199px) {
+    .main_theme{
+        width: 100% ;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main_theme{
+        width: 840px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .main_theme{
+        width: 1040px;
+    }
+}
+@media screen and (min-width: 2200px) {
+    .main_theme{
+        width: 1540px;
+    }
 }

@@ -1,0 +1,31 @@
+form {
+    margin-top: -15px;
+}
+
+label {
+    font-weight: 600;
+    font-size: medium;
+    color: #35475B;
+}
+
+input {
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#result_todo_list {
+    padding-left: 0;
+}
+#result_todo_list > li {
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: #f1f0ed;
+    font-size: 18px;
+    transition: 0.2s;
+}

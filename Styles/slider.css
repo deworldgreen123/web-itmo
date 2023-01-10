@@ -1,0 +1,30 @@
+.img_slider{
+    width: 150px;
+    height: 250px;
+}
+
+.slick-dots {
+    margin-bottom: -2rem;
+}
+
+.slick-dots li button:before {
+    /*opacity: 1;*/
+}
+
+.register-button {
+    background-color: #DDEBFB;
+    color: #35475B;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 100px;
+    width: 150px;
+}
+
+.register-button:hover {
+    color: #FFFFFF;
+    background-color: #35475B;
+}
