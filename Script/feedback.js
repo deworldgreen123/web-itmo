@@ -1,8 +1,13 @@
-function addListElement(text) {
-    let myLink = document.createElement('li');
-    let nodeText = document.createTextNode(`${text}`);
-    myLink.appendChild(nodeText);
-    document.querySelector('#result_todo_list').appendChild(myLink);
+const addListElement = text =>{
+    return new Promise(resolve => {
+        let myLink = document.createElement('li');
+        let nodeText = document.createTextNode(`${text}`);
+        myLink.appendChild(nodeText);
+        setTimeout(() => {
+            document.querySelector('#result_todo_list').appendChild(myLink);
+            resolve();
+        }, 200)
+    })
 }
 
 function createListElement() {
@@ -10,8 +15,8 @@ function createListElement() {
     let task_item = `${task}`;
     if (task !== "") {
         itemsArray.push(task_item);
-        localStorage.setItem('items'+v, JSON.stringify(itemsArray));
-        addListElement(task_item);
+        localStorage.setItem('items' + v, JSON.stringify(itemsArray));
+        addListElement(task_item).then(() => console.log('+'));
     }
     else {
         alert("Заполните поле 'Содержание'!")
@@ -27,7 +32,7 @@ localStorage.setItem('items' + v, JSON.stringify(itemsArray));
 const data = JSON.parse(localStorage.getItem('items' + v));
 document.ready = function()  {
     data.forEach(item => {
-        addListElement(item);
+        addListElement(item).then(() => console.log('+'));
     });
 };
 

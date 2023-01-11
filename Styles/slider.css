@@ -6,6 +6,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    aspect-ratio: 4/5;
 }
 
 .img_slider img{
@@ -59,7 +60,6 @@
 @media screen and (min-width: 1200px) {
     .img_slider{
         width: 200px;
-        height: 250px;
     }
     .register-button {
         width: 200px;
@@ -69,7 +69,6 @@
 @media screen and (min-width: 1600px) {
     .img_slider{
         width: 250px;
-        height: 300px;
     }
     .register-button {
         width: 250px;
@@ -78,7 +77,6 @@
 @media screen and (min-width: 2200px) {
     .img_slider{
         width: 375px;
-        height: 500px;
     }
     .register-button {
         width: 375px;
