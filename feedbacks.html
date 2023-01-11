@@ -10,7 +10,6 @@
   <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="Script/timeLoad.js"></script>
   <script src="Script/activeMenu.js"></script>
-  <script src="Script/feedback.js"></script>
 </head>
 <body>
 <header class="header_main-theme">
@@ -46,15 +45,13 @@
   </div>
 </header>
 <main class="main_theme">
-  <form onsubmit="return false;">
-    <h2>Отзывы</h2>
-    <input type="text" id="task" name="task" value="" placeholder="Содержание"><br>
-    <input type="submit" value="Добавить">
-  </form>
-
-  <div>
-    <ul id="result_todo_list">
-    </ul>
+  <div id="json_list">
+    <template id="posts">
+      <div class="post_container">
+        <p class="post_title">${item.title}</p>
+        <p class="post_body">${item.body}</p>
+      </div>
+    </template>
   </div>
 </main>
 <footer>
@@ -65,6 +62,7 @@
     <li><a href="mailto:deworldgreen123@gmail.com" target="_blank">deworldgreen123@gmail.com</a></li>
   </ul>
 </footer>
+<script src="Script/fetchJSON.js"></script>
 <span id="load-time"></span>
 </body>
 </html>
